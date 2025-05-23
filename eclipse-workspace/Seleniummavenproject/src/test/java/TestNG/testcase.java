@@ -29,7 +29,7 @@ public class testcase {
 		page.clicklogin();
 		//driver.findElement(By.xpath("\"//input[@name='username']\"")).sendKeys("//input[@name='username']");
 		
-		boolean dash=driver.findElement(By.xpath("//img[@alt='...client brand banner']")).isDisplayed();
+		boolean dash=driver.findElement(By.xpath("//img[@alt='client brand banner']")).isDisplayed();
 		Assert.assertTrue(dash);
 	}
 	@AfterClass

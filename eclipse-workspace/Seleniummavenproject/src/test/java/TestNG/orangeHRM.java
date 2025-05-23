@@ -9,14 +9,14 @@ import org.testng.annotations.Test;
 public class orangeHRM {
 	
 	WebDriver driver;
-	@Test(priority=2)
+	@Test(priority=1)
 	void openapp() {
 		driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(9));
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		driver.manage().window().maximize();	
 	}
-	@Test(priority=1)
+	@Test(priority=2)
 	void title() {
 		String tite=driver.getTitle();
 		System.out.println(tite);
